@@ -1,0 +1,13 @@
+<section id="cabanes" class="2">
+    <div class="container">
+        {{ with .Site.GetPage "section" "portfolio" }}
+            {{ .Content }}
+        {{ end }}
+
+        {{ $v1 := where .Data.Pages ".Params.categorie" "photoswipe" }}
+        {{ range $v1 }}
+            {{ .Render "single"}}
+        {{ end }}
+
+    </div>
+</section>

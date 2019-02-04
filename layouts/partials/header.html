@@ -1,0 +1,52 @@
+<!-- Header Start -->
+<header>
+
+<!-- Pour Google Analytics sauf mode dev server -->
+{{- if not .Site.IsServer -}}
+  {{ template "_internal/google_analytics.html" . }}
+{{- end -}}
+
+<!-- Message d'alerte fixe -->
+{{ with .Site.Params.msgboxlocal }}
+    {{ if .enable }}
+      <div class="MsgBoxLocal">
+          <a href="{{ .url }}" target="_blank">
+            {{ .title }}<br>
+            {{ .text }}
+          </a>
+        </div>
+    {{ end }}
+{{ end }}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- header Nav Start -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+              {{ partial "logo.html" . }}
+            </a>
+          </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+              {{ range .Site.Menus.header }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+              {{ end }}
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </div>
+    </div>
+  </div>
+</header><!-- header close -->

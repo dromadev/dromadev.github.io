@@ -1,0 +1,51 @@
+{{ if .Site.Params.webcam.enabletimelapse }}
+    <section id="timelapse">
+        <div class="container">
+            <!-- Partie texte -->
+            <div class="row">
+                <div class="section-title text-center">
+                    <h2>{{ .Site.Params.webcam.titletimelapse }}</h2>
+                    {{ if .Site.Params.webcam.timelapseembeded }}
+                        <h3>{{ .Site.Params.webcam.subtitletimelapse }}</h3>
+                    {{ end }}
+                    <p>{{ .Site.Params.webcam.copyrighttimelapse }}</p>
+                </div>
+            </div>
+
+            <!-- Time lapse - source https://www.lookr.com/embed/1534093781 -->
+            {{ if not .Site.Params.webcam.timelapseembeded }}
+                <!-- External player -->
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="block text-center">
+                        <a name="lkr-timelapse"
+                                data-id="{{ .Site.Params.webcam.idtimelapse }}"
+                                data-play="month"
+                                href="https://lookr.com/fr/lookout/{{ .Site.Params.webcam.idtimelapse }}-Arolla#action-play-month"
+                                target="_blank">Arolla: Mont de l'Etoile: Lire 30 jours
+                        </a>
+                        <script async type="text/javascript" src="https://api.lookr.com/link/script/timelapse.js"></script>
+                        </div>
+                    </div>
+                </div>
+            {{ else }}
+                <!-- Embeded player -->
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="block text-center">
+                            <a name="lkr-timelapse-player"
+                                data-id="{{ .Site.Params.webcam.idtimelapse }}"
+                                data-play="month"
+                                href="https://lookr.com/{{ .Site.Params.webcam.idtimelapse }}"
+                                target="_blank">
+                                Arolla:Camping Arolla
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <script async type="text/javascript" src="https://api.lookr.com/embed/script/player.js"></script>
+            {{ end }}
+
+        </div>
+    </section>
+{{ end }}

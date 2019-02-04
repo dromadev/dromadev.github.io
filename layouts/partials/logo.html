@@ -1,0 +1,5 @@
+{{ $path     := .Site.Params.logo }}
+{{ $original := resources.Get $path  }}
+{{ $options := printf "%sx" .Site.Params.logo_size }}
+{{ $result   := $original.Resize $options }}
+<img src="{{ $result.Permalink | absURL }}" alt="Logo du Camping Arolla">

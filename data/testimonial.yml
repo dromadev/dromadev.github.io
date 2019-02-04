@@ -1,0 +1,65 @@
+enable: true
+title: Le saviez vous ? / Fun Facts About Us
+paragraph: >
+  Quelques chiffres secrets juste pour vous / Those are our secrets numbers just for you.
+
+numbers:
+  - icon: ion-podium
+    counter: 1950
+    text: Plus haut camping d'europe / Highest campsite in Europe ... 1.950m
+  - icon: ion-scissors
+    counter: 1345278
+    text: Brins d'herbe tondus en Juin / Shorn grass in June
+  - icon: ion-ios-paw
+    counter: 54
+    text: Marmottes vues cette année / Marmottes views this year
+  - icon: ion-happy-outline
+    counter: 123
+    text: Nombre de rires et sourires chaque jour / Number of laughs and smiles every day.
+
+people:
+  - text: >
+      Super confortable, j'ai mieux dormi que dans mon lit.
+    image: img/happycamper.jpg
+    name: D. K.
+    role: An other happy cocoon & cosy victim
+  - text: >
+      C'est encore mieux que sur les photos, c'est magnifique.
+    image: img/happycamper.jpg
+    name: Megan W.
+    role: Happy camper
+  - text: >
+      Honestly, we couldn't recommend this place highly enough, it was the highlight of our trip!
+    image: img/happycamper.jpg
+    name: Michael
+    role: Happy customer
+  - text: >
+      Un vrai repère d’amoureux au cœur d’un camping plus qu’époustouflant ...
+    image: img/happycamper.jpg
+    name: Amandine L.
+    role: Customer in love
+  - text: >
+      Vue grandiose. Camping bien agencé en pleine nature et bien équipé. Très calme et très propre.
+    image: img/happycamper.jpg
+    name: Aurélien G.
+    role: New & happy camper
+  - text: >
+      A perfect starting point for hikes of all levels of difficulty. Stunning 360 mountain views, there's nothing like it.
+    image: img/happycamper.jpg
+    name: Dieter B.
+    role: 360° camper
+  - text: >
+      This camp site has genuinely made me fall in love with camping. The environment is simply idyllic. Toilets are cleaner than home's,
+    image: img/happycamper.jpg
+    name: Thaïs B.
+    role: New camping lover
+  - text: >
+      Not only was the view amazing but everything that one could need for camping was provided.
+    image: img/happycamper.jpg
+    name: SwiissTraveller
+    role: Swiss enthousiast Cocoon camper
+  - text: >
+      Si on ne venait pas de si loin, Canada, on y reviendrait souvent.
+    image: img/happycamper.jpg
+    name: Paul-André G.
+    role: Canadian Cocoonist

@@ -1,0 +1,61 @@
+<section id="legal">
+    {{ with .Site.Data.legal }}
+        {{ if .enable }}
+            {{ "<!-- Start Payments Section -->" | safeHTML }}
+            <section class="about-2 section bg-gray" id="about">
+                <div class="row">
+                    <div class="col">
+                        <div class="title text-center">
+                            {{ with .topTitle }}<h4>{{.}}</h4>{{ end }}
+                            {{ with .title }}
+                            <h2>{{.}}</h2>
+                            <span class="border"></span>
+                            {{ end }}
+                            {{ with .subtitle }}<p>{{.}}</p>{{ end }}
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+
+                    {{ range .content }}
+                        {{ range . }}
+                            {{ range . }}
+                                <div class="row">
+                                    <div class="col-12 col-md-5">
+                                        {{ with .icon }}<i class="{{ . }}"></i>{{ end }}
+                                        {{ with .title }}<h2>{{ . }}</h2>{{ end }}
+                                    </div>
+                                    <div class="col-12 col-md-7">
+                                        {{ range .item }}
+                                            <div class="block contact-section">
+                                                {{ range .icon }}<i class="{{.}}"></i> {{ end }}
+                                                {{ with .title }}<h3>{{.}}</h3>{{ end }}
+                                                <ul>
+                                                    {{ range .list }}
+                                                    <li>{{.name}}</li>
+                                                    {{ end }}
+                                                </ul>
+                                            </div>
+                                        {{ end }}
+                                    </div>
+                                </div>
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+
+                </div>
+            </section>
+
+            {{ "<!-- End pyments section -->" | safeHTML }}
+        {{ end }}
+    {{ end }}
+
+    <section class="service-2 bg-gray">
+        <div class="container">
+            <div class="row">
+                {{ .Content }}
+            </div>
+        </div>
+    </section>
+
+</section>

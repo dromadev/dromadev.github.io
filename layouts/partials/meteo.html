@@ -1,0 +1,31 @@
+<div class="container" id="meteo">
+    <div class="row">
+        <div class="section-title text-center">
+            <h2>{{ .Site.Params.meteo.title }}</h2>
+            <p>{{ .Site.Params.meteo.subtitle_fr }}</p>
+            <p>{{ .Site.Params.meteo.subtitle_en }}</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="block text-center">
+<iframe src="https://www.meteoblue.com/en/weather/widget/daily/arolla_switzerland_2661713?geoloc=fixed&days=2&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windgust=0&winddirection=0&uv=0&humidity=0&precipitation=0&precipitation=1&precipitationprobability=0&precipitationprobability=1&spot=0&spot=1&pressure=0&layout=light"
+    frameborder="2" scrolling="NO" allowtransparency="true"
+    sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
+    style="width: 128px;height: 327px">
+</iframe
+><div><!-- DO NOT REMOVE THIS LINK -->
+    <a href="https://www.meteoblue.com/en/weather/forecast/week/arolla_switzerland_2661713?utm_source=weather_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget" target="_blank">meteoblue.ch</a>
+</div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="block text-left">
+                <p>{{ .Site.Params.meteo.paragraph_fr }}</p>
+                <p>{{ .Site.Params.meteo.paragraph_en }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
