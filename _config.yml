@@ -1,12 +1,12 @@
-   ######################
+######################
 # book (meta) info
 
-title: Retour d'expérience
+title: Strange Case of Dr. Jekyll and Mr. Hyde
 author: 
-  name: Mourad Chaibi  (CGI))
+  name: Robert Louis Stevenson
 
 github:
-  url: "https://dromadev.github.io"
+  url: "https://github.com/bookdesigns/book-epsilon"
 
 
 ########
@@ -23,4 +23,3 @@ sass:
 exclude:
 - README.md
 
-   
