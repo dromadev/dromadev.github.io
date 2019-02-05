@@ -1,25 +1,32 @@
-######################
-# book (meta) info
-
-title: Retour d'expérience
-author: 
-  name: Mourad Chaibi
-
-github:
-  url: "https://dromadev.github.io/"
-
-
-########
-# more settings
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
+# Site settings
+title: Postgres Guide
+twitter_username: postgresguide
+twitter_tweet_button: true
+github_username: craigkerstiens/postgresguide.com
+destination:    ./_site
+safe:           false
+lsi:            false
+include:        [".htaccess"]
+exclude:        ["script", "vendor", "Gemfile", "Gemfile.lock", "config.ru", "Procfile", "Rakefile", "readme.md", "scss"]
+permalink: /:categories/:year/:title
+markdown_ext:   markdown,mkd,mkdn,md
+markdown: redcarpet
 
 collections:
-  chapters:
-      output: false
-
-sass:
-  sass_dir: css
-  style:    expanded
-
-exclude:
-- README.md
-
+  setup:
+    output: true
+  sql:
+    output: true
+  utilities:
+    output: true
+  tips:
+    output: true
+  performance:
+    output: true
+  sexy:
+    output: true
+  links:
+    output: false
+  ads:
+    output: false
