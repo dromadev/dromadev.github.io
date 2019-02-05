@@ -1,9 +1,9 @@
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
 # Site settings
-title: Postgres Guide
+title: Dromadev
 twitter_username: postgresguide
 twitter_tweet_button: true
-github_username: craigkerstiens/postgresguide.com
+github_username: dromadev/dromadev.github.io
 destination:    ./_site
 safe:           false
 lsi:            false
