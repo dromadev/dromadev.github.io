@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Installing Postgres"
-date:
+date: 2018-04-18 11:30:00 +0800
 categories: setup
 permalink: /setup/install.html
 ---
