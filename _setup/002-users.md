@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Users"
-date:
+date:   10/10/2018
 categories: setup
 permalink: /setup/users.html
 ---
