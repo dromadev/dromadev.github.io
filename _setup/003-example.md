@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Example Database"
-date:
+date:  10/10/2018
 categories: setup
 permalink: /setup/example.html
 ---
